@@ -69,12 +69,19 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| title    | 标题 |   String    |   []    |
+| tabs    | Tabs列表 |   Array    |   []    |
 
 
 ### Methods
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| on-change    | tab切换时触发 |   选中的tab的键值    |
+
+
+### slot
+
+| 名称        | 说明   |
+| --------   | -----:  |
+| header    | 自定义页头 |

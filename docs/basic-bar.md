@@ -62,12 +62,6 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| value    | 百分比值 |   Number    |   0    |
+| size    | 类型:''\|'mini' |   String    |   ''    |
 
-
-### Methods
-
-| 事件名        | 说明   |  返回值  |
-| --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |

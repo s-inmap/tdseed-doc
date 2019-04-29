@@ -64,16 +64,28 @@ export default {
 
 ### API
 
-### Attributes
+### Swiper Attributes
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| loading    | 是否显示loading |   Boolean    |   false    |
 
+
+### SwiperPane Attributes
+
+| 属性        | 说明   |  类型  |  默认值 |
+| --------   | -----:  | :----:  | :----:  |
+| name    | 命名 |   String    |   ''    |
+| animation    | 动效'slide-in' \| 'slide-out' |   String    |   'slide-in'    |
+
+### slot
+
+| 名称        | 说明   |
+| --------   | -----:  |
+| nav    | 自定义页头 |
 
 ### Methods
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| open(name)    |  this.$refs.swipers.open('page'),打开某一命名页 |       |

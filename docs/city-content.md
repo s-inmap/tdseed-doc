@@ -16,7 +16,7 @@
                     <i class="icon-funnel"></i>选择城市
                 </div>
                 <div class="api" slot="content">
-                    <city-content v-model="checkCity" :data="selectCityData" @on-change="cityChange" @on-submit="submitCity" @on-cancel="cancelCity"></city-content>
+                    <city-content v-model="checkCity" :data="selectCityData" @on-change="cityChange" @on-submit="submitCity" @on-cancel@on-cancel="cancelCity"></city-content>
                 </div>
             </Poptip>
         </div>
@@ -87,12 +87,14 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| v-model    | 城市数据 |   Array    |   []    |
+| data    | 禁用 |   Boolean    |   false    |
 
 
 ### Methods
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| on-change    | 勾选，取消勾选时触发 |   选中城市数组    |
+| on-submit    | 更新时触发 |   数组    |
+| on-cancel    | 取消时触发 |   数组    |

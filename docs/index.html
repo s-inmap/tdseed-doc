@@ -59,6 +59,9 @@
     .vuep-preview {
         position: relative;
     }
+    .vuep-scoped-3 {
+        display: flex;
+    }
     #ex-filter-city {
         position: relative;
         width: 400px;
@@ -85,24 +88,28 @@
     .cm-variable-2 {
         font-family: Consolas, Menlo, Courier, monospace;
     }
+    .progress {
+        position: inherit;
+    }
     </style>
 </head>
 
 <body>
     <div id="app"></div>
-    <!-- or use the compressed files -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="//unpkg.com/vue/dist/vue.min.js"></script>
     <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="//unpkg.com/docsify-demo-box-vue/dist/docsify-demo-box-vue.min.js"></script>
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/lodash/lodash.min.js"></script>
     <script src="https://unpkg.com/iview@2.14.3/dist/iview.min.js"></script>
     <script src="https://unpkg.com/tdseed/dist/tdseed.min.js"></script>
     <script>
-    var jsResources = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>'
+    var jsResources = '<scr' + 'ipt src="https://unpkg.com/vue/dist/vue.js"></scr' + 'ipt>'
+    var iview = '<scr' + 'ipt src="https://unpkg.com/iview@2.14.3/dist/iview.min.js"></scr' + 'ipt>'
     var cssResources = '@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");'
+    var ivcss = '@import url("https://unpkg.com/iview@2.14.3/dist/styles/iview.css");'
     var bootCode = 'var globalVariable = "leon"'
     var globalVariable = "leon"
 

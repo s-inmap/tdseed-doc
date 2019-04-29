@@ -1,4 +1,4 @@
-# 多选
+# mul-chooser
 
 ### 概述
 
@@ -40,6 +40,7 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
+| v-model    | 初始化选中城市 |   Array    |   []    |
 | data    | 城市数据 |   Array    |   []    |
 | disable    | 禁用 |   Boolean    |   false    |
 
@@ -48,4 +49,4 @@ export default {
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| on-change    | 更改选中项时触发 |   数组序列    |

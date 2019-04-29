@@ -82,12 +82,8 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| title    | 标题 |   String    |   ''    |
+| data    | 数据 |   Array    |   []    |
+| color    | 条形物颜色配置 |   Array    |   ['#870E4F', '#E65002', '#F9A825', '#FFD602', '#807718', '#548B2F', '#0A7138', '#006064', '#02569B', '#1B237E']    |
+| loading    | 是否显示loading |   Boolean    |   false    |
 
-
-### Methods
-
-| 事件名        | 说明   |  返回值  |
-| --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |

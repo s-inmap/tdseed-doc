@@ -11,15 +11,15 @@
 <template>
     <div class='ex-select-group'>
         <div v-if="visible">
-             <Button type="primary" class="add" style="width:134px" @click="addCondition">
+             <i-button type="primary" class="add" style="width:134px" @click="addCondition">
                 <Icon type="plus-round"></Icon>添加筛选条件
-            </Button>
-            <Button type="primary" class="add" style="width:134px" @click="edit">
+            </i-button>
+            <i-button type="primary" class="add" style="width:134px" @click="edit">
                 <Icon type="plus-round"></Icon>编辑
-            </Button>
+            </i-button>
         </div>
         <select-group ref="selectGroup" v-model="modelData" :data="conditionData" @on-minus="onMinus"></select-group>
-        <Button type="primary" class="submit" :class="{disabled:visible}" @click="submit">开始筛选</Button>
+        <i-button type="primary" class="submit" :class="{disabled:visible}" @click="submit">开始筛选</i-button>
         <a href="javascript:void(0)" v-if='!visible' class="clear" @click="clearConditions">清空条件</a>
     </div>
 </template>
@@ -156,12 +156,21 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| v-model    | 可使用 v-model 双向绑定数据。 |   Object    |   {}    |
+| data    | 条件数据 |   Object    |   {}    |
 
 
 ### Methods
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| on-minus    | 减去某一项 |       |
+
+### 其他Methods
+
+| 事件名        | 说明   |  返回值  |
+| --------   | -----:  | :----:  |
+| click    | 添加筛选条件 this.$refs['selectGroup'].addGroup(); |       |
+| click    | 编辑 重新设置v-model |       |
+| click    | 清空 this.$refs['selectGroup'].clear(); |       |
+| click    | 开始筛选，执行验证 this.$refs['selectGroup'].validate(); |       |

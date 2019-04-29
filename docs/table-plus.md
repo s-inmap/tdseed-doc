@@ -199,12 +199,11 @@ export default {
 
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
-| data    | 城市数据 |   Array    |   []    |
-| disable    | 禁用 |   Boolean    |   false    |
+| options    | 表格数据，见iview table格式 |   Object    |   {}    |
 
 
 ### Methods
 
 | 事件名        | 说明   |  返回值  |
 | --------   | -----:  | :----:  |
-| on-change    | 更改选中项时触发 |   选中的数组    |
+| on-selection-change    | 勾选触发 |   选中的数组对象    |
