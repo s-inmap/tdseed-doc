@@ -7,7 +7,20 @@
 
 <vuep template="#example" :options="{ theme: 'mdn-like' }"></vuep>
 
+
 <script v-pre type="text/x-template" id="example">
+<style>
+.ex-table-plus {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(23, 35, 61, 0.35);
+    box-shadow: 0 1px 2px 0 rgba(23, 35, 61, 0.35);
+    max-width: 1000px;
+}
+
+</style>
 <template>
     <div class='ex-table-plus'>
         <table-plus id='td-tablePlus' :options='tableOp' @on-selection-change="selectionChange">
@@ -15,7 +28,6 @@
     </div>
 </template>
 <script>
-import utils from '../../src/lib/utils'
 
 export default {
     data() {
@@ -172,22 +184,7 @@ export default {
 }
 
 </script>
-<style scoped>
 
-
-</style>
-<style>
-.ex-table-plus {
-    margin-top: 25px;
-    margin-bottom: 50px;
-    width: 100%;
-    position: relative;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(23, 35, 61, 0.35);
-    box-shadow: 0 1px 2px 0 rgba(23, 35, 61, 0.35);
-    max-width: 1000px;
-}
-
-</style>
 
 </script>
 

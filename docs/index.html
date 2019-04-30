@@ -56,21 +56,12 @@
         color: #5c6b77;
         font-weight: 600;
     }
+
     .vuep-preview {
         position: relative;
     }
     .vuep-scoped-3 {
         display: flex;
-    }
-    #ex-filter-city {
-        position: relative;
-        width: 400px;
-        height: 400px;
-    }
-    .td-filter-city {
-        position: relative;
-        width: 400px;
-        height: 400px;
     }
     /*code theme*/
 
@@ -88,6 +79,9 @@
     .cm-variable-2 {
         font-family: Consolas, Menlo, Courier, monospace;
     }
+    .markdown-section p:nth-of-type(2) {
+        min-height: 400px;
+    }
     .progress {
         position: inherit;
     }
@@ -96,7 +90,7 @@
 
 <body>
     <div id="app"></div>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
     <script src="//unpkg.com/vue/dist/vue.min.js"></script>
     <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -107,9 +101,7 @@
     <script src="https://unpkg.com/tdseed/dist/tdseed.min.js"></script>
     <script>
     var jsResources = '<scr' + 'ipt src="https://unpkg.com/vue/dist/vue.js"></scr' + 'ipt>'
-    var iview = '<scr' + 'ipt src="https://unpkg.com/iview@2.14.3/dist/iview.min.js"></scr' + 'ipt>'
     var cssResources = '@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");'
-    var ivcss = '@import url("https://unpkg.com/iview@2.14.3/dist/styles/iview.css");'
     var bootCode = 'var globalVariable = "leon"'
     var globalVariable = "leon"
 
@@ -128,6 +120,7 @@
             DemoBoxVue.create(jsResources, cssResources, bootCode)
         ]
     }
+    // Vue.use(Vuep, { mode: 'javascript' })
     </script>
 </body>
 

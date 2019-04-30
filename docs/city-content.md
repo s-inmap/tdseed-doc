@@ -5,13 +5,37 @@
 支持下拉选择城市
 
 
-<vuep template="#example" :options="{ theme: 'mdn-like' }"></vuep>
+<vuep template="#demo-city-content" :options="{ theme: 'mdn-like' }"></vuep>
 
-<script v-pre type="text/x-template" id="example">
+<script v-pre type="text/x-template" id="demo-city-content">
+<style>
+#ex-filter-city {
+    position: relative;
+}
+#ex-filter-city .position{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ex-filter-city .cityPop {
+    line-height: 32px;
+    width: 104px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-hover);
+}
+#ex-filter-city .ivu-poptip-body {
+    padding: 0;
+}
+#ex-filter-city .ivu-poptip-body-content {
+    overflow: hidden;
+}
+</style>   
 <template>
     <div id="ex-filter-city">
         <div class="position">
-            <Poptip placement="bottom-end" width="220" v-model="visible" @on-popper-show="onPopperShow">
+            <Poptip placement="bottom-start" width="220" v-model="visible" @on-popper-show="onPopperShow">
                 <div class="cityPop hoverPop">
                     <i class="icon-funnel"></i>选择城市
                 </div>
@@ -51,34 +75,9 @@ export default {
 }
 
 </script>
-<style>
-#ex-filter-city {
-    position: relative;
-    .position {
-        position: absolute;
-        top: 0;
-        left: 0;
-        .cityPop {
-            line-height: 32px;
-            width: 104px;
-            cursor: pointer;
-            text-align: center;
-            font-size: 14px;
-            color: var(--color-hover);
-        }
-        .ivu-poptip-body {
-            padding: 0;
-        }
-        .ivu-poptip-body-content {
-            overflow: hidden;
-        }
-    }
-}
-
-</style>
 
 
-</script>
+
 </script>
 
 ### API
