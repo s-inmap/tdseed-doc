@@ -76,7 +76,7 @@ export default {
 | 属性        | 说明   |  类型  |  默认值 |
 | --------   | -----:  | :----:  | :----:  |
 | name    | 命名 |   String    |   ''    |
-| animation    | 动效'slide-in' \| 'slide-out' |   String    |   'slide-in'    |
+| animation    | 动效'slide-in' \| 'slide-out' |   String    |   ''    |
 
 ### slot
 

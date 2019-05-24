@@ -40,7 +40,7 @@
                     <i class="icon-funnel"></i>选择城市
                 </div>
                 <div class="api" slot="content">
-                    <city-content v-model="checkCity" :data="selectCityData" @on-change="cityChange" @on-submit="submitCity" @on-cancel@on-cancel="cancelCity"></city-content>
+                    <city-content v-model="checkCity" :data="selectCityData" @on-change="cityChange" @on-submit="submitCity" @on-cancel="cancelCity"></city-content>
                 </div>
             </Poptip>
         </div>
